@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+
+
+<body>
+
+    <!-- Container for the number of Subjects Question -->
+    <form id="first-form-container">
+
+        <h3>How many subjects would you like to calculcate?</h3>
+
+        <!-- Number of Subjects Input -->
+        Enter Number of subjects (max 9): <input id="numSubjects-input" type="number" min="1" max="9" /><br />
+
+        <!-- Submit Button -->
+        <input id="numSubjects-button" type="submit" /><br />
+    </form>
+
+
+
+
+    <!-- Container for the entering the name and grade of each subject -->
+    <form id="second-form-container" style="display: none">
+
+        <h3 id="grade-question"></h3>
+
+        <!-- Name Input -->
+        Name of subject:<input id="subjectName-input" type="text" /><br />
+    
+        <!-- Grade Input -->
+        Grade of subject:<input id="subjectGrade-input" type="number" min="0" max="100" /><br />
+    
+        <!-- Submit Button -->
+        <input id="subjectGrade-button" type="submit" /><br />
+    </form>
+
+
+
+    <!-- Container for the results -->
+    <div id="results-container" >
+
+        <h3>Here is a list of your subjects and results:</h3>
+
+        <!-- Final Grade -->
+        <h4 id="results"></h3>
+
+        <!-- Final Grade -->
+        <h3 id="final-grade"></h3>
+
+    </div>
+    
+   
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
